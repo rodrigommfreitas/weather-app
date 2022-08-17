@@ -29,7 +29,6 @@ async function fetchWeather() {
       const humidity = document.querySelector('.weather__humidity');
       // Update the information displayed
       changeBackground(data.weather[0].main);
-      console.log(data.weather[0].main);
       location.innerText = data.name;
       temperature.innerText = Math.round(data.main.temp) + ' ºC';
       description.innerText = data.weather[0].main;
