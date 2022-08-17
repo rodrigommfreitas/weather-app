@@ -37,7 +37,6 @@ async function fetchWeather() {
       humidity.innerText = 'Humidity: ' + data.main.humidity + '%';
     }
   } catch (err) {
-    alert(err.message);
     console.log(
       'Something went wrong while fetching the current weather data...',
       err
