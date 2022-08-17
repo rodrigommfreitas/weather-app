@@ -1,0 +1,37 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1;
+  margin-block: 0;
+}
+h1 {
+  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
+}
+h2 {
+  font-size: clamp(1.375rem, 0.875rem + 2vw, 2.25rem);
+}
+p {
+  margin-block: 0;
+  font-size: 1rem;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+} /*# sourceMappingURL=style.css.map */
