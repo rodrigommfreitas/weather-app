@@ -1,0 +1,42 @@
+@use '../util/' as u;
+
+.search {
+  display: flex;
+  height: u.em(50);
+
+  &__bar {
+    width: calc(100% - u.em(5) - u.rem(50));
+    padding-inline: u.em(15);
+    margin-right: u.em(5);
+    border: 0;
+    border-radius: 25px;
+    background-color: transparent;
+    backdrop-filter: blur(u.em(16)) brightness(50%);
+    color: white;
+    font-size: u.rem(20);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    width: u.rem(50);
+    border: 0;
+    border-radius: 25px;
+    background-color: transparent;
+    backdrop-filter: blur(u.em(16)) brightness(50%);
+    cursor: pointer;
+
+    svg {
+      width: u.em(25);
+      height: u.em(25);
+      margin-top: 3px;
+    }
+
+    &:active {
+      opacity: 0.9;
+      transition: 50ms ease-in-out;
+    }
+  }
+}

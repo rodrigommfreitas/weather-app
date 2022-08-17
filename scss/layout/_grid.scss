@@ -1,0 +1,40 @@
+@use '../util/' as u;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: u.em(32);
+  color: white;
+  background-image: url('/images/backgrounds/clear.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @include u.breakpoint-up(large) {
+    display: grid;
+    align-items: center;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: u.em(50);
+  grid-template-columns: 1fr;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+
+  @include u.breakpoint-up(medium) {
+    width: u.em(630);
+  }
+
+  @include u.breakpoint-up(large) {
+    padding: u.em(32);
+    background-color: transparent;
+    backdrop-filter: blur(u.em(16)) brightness(75%);
+    border-radius: u.em(25);
+    height: 60%;
+    min-height: 500px;
+    max-height: 700px;
+  }
+}

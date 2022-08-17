@@ -1,0 +1,47 @@
+@use '../util/' as u;
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: u.em(10);
+
+  &__location {
+    filter: drop-shadow(0px 0px 8px hsl(0, 0%, 20%));
+    font-size: u.rem(64);
+    font-weight: 400;
+  }
+
+  &__temperature {
+    filter: drop-shadow(0px 0px 8px hsl(0, 0%, 20%));
+    font-size: u.rem(96);
+    font-weight: 400;
+  }
+
+  &__description {
+    filter: drop-shadow(0px 0px 8px hsl(0, 0%, 20%));
+    font-size: u.rem(20);
+    font-weight: 600;
+    color: hsl(0, 0%, 95%);
+  }
+
+  &__additional {
+    display: flex;
+    flex-direction: column;
+    gap: u.em(10);
+    margin-top: u.em(32);
+  }
+
+  &__wind {
+    filter: drop-shadow(0px 0px 5px hsl(0, 0%, 10%));
+    font-size: u.rem(20);
+    font-weight: 400;
+  }
+
+  &__humidity {
+    filter: drop-shadow(0px 0px 5px hsl(0, 0%, 10%));
+    font-size: u.rem(20);
+    font-weight: 400;
+  }
+}
